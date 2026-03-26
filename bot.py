@@ -45,7 +45,8 @@ async def start_command(client, message):
                 InlineKeyboardButton("Join Channel 1", url="https://t.me/silentcreations"),
                 InlineKeyboardButton("Join Channel 2", url="https://t.me/Hunter_x_Anime")
             ],[
-                InlineKeyboardButton("Join Channel 3", url="https://t.me/ongoinganime1")
+                InlineKeyboardButton("Join Channel 3", url="https://t.me/ongoinganime1"),
+                InlineKeyboardButton("Join Channel 4", url="https://t.me/javersacapital")
             ],[
                 InlineKeyboardButton("🔄 Try Again", callback_data="check_sub")
             ]
@@ -116,7 +117,7 @@ async def send_video_files(client, chat_id):
     # Send the auto-delete warning message
     warning_msg = await client.send_message(
         chat_id=chat_id,
-        text="⚠️ **message**\nFile will be Auto Deleted in 10 minutes."
+        text="⚠️ **message**\nFile will be Auto Deleted in 15 minutes."
     )
     sent_messages.append(warning_msg)
     
